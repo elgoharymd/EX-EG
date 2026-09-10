@@ -1,0 +1,1678 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="color-scheme" content="dark">
+    <script src="https://unpkg.com/lucide@0.468.0" integrity="sha384-uTYyvsSSUZeaPhb5RbKlQa0zY/WpX/QHfvg2mczXyBQOpkWPEDy9lczyp+w7SKXu" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="https://i.ibb.co/JRRsydPb/Gemini-Generated-Image-v16pasv16pasv16p.jpg">
+    <title> تصميم  </title>
+</head>
+   
+<STyle>
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  
+  background-image: url('https://i.ibb.co/JRRsydPb/Gemini-Generated-Image-v16pasv16pasv16p.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  
+  position: relative;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border: 4px solid #00f0ff;
+  border-radius: 20px;
+  box-shadow: 
+    0 0 10px #00f0ff,
+    0 0 25px #00f0ff,
+    0 0 50px #00f0ff,
+    inset 0 0 25px #00f0ff;
+  z-index: 999;
+  pointer-events: none;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(2px);
+  z-index: -1;
+  pointer-events: none;
+}
+body > * {
+  position: relative;
+  z-index: 1;
+  animation: float 3.5s ease-in-out infinite;
+}
+
+@keyframes float {
+ 0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+h1{
+  background: brown;
+  padding:10px 25px;
+border-radius: 50px;
+display: inline-block;
+}
+footer{
+  background-color: brown;
+}
+audio{
+width: 380px;
+height:45px;
+border-radius: 25px;
+filter:drop-shadow(00 15px #00f0ff);
+background: #111;
+
+
+}
+img{
+  width:200px;
+  border-radius:50%;
+  box-shadow:0 0 20px 10px #00f0ff;
+}
+.ex-eg-profile-image {
+  position: relative;
+  z-index: 2;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+  opacity: 0;
+  animation: none;
+}
+
+.ex-eg-profile-wrap.is-visible .ex-eg-profile-image {
+  animation: profile-image-reveal 1.3s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
+}
+
+@keyframes profile-image-reveal {
+  from {
+    opacity: 0;
+    transform: scale(0.45) rotate(-12deg);
+    filter: brightness(0.35) blur(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+    filter: brightness(1) blur(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ex-eg-profile-image { animation: none; opacity: 1; }
+}
+.ex-eg-profile-wrap {
+  position: relative;
+  top: 8vh;
+  width: 400px;
+  height: 400px;
+  margin-bottom: 100px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+
+.ex-eg-profile-wrap::before,
+.ex-eg-profile-wrap::after {
+  content: "";
+  position: absolute;
+  inset: -28px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: repeating-radial-gradient(circle, rgba(0, 240, 255, 0.95) 0 3px, rgba(0, 150, 255, 0.75) 3px 7px, rgba(0, 70, 180, 0.5) 7px 11px, transparent 11px 24px);
+  filter: blur(5px);
+  opacity: 0;
+  animation: ocean-wave-in 3.6s ease-in-out infinite;
+}
+
+.ex-eg-profile-wrap::after {
+  inset: -18px;
+  background: repeating-radial-gradient(circle, rgba(120, 250, 255, 0.95) 0 2px, rgba(0, 210, 255, 0.8) 2px 5px, rgba(0, 110, 220, 0.55) 5px 8px, transparent 8px 17px);
+  filter: blur(3px);
+  animation-delay: 1.8s;
+}
+
+@keyframes ocean-wave-in {
+  0% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+  35% {
+    opacity: 0.95;
+  }
+  100% {
+    transform: scale(0.78);
+    opacity: 0;
+  }
+}
+video{
+ width: 380px;
+ max-width: 95%;
+ height: auto;
+ border-radius: 20px;
+ display: block;
+ margin: 0 auto;
+ background: #000;
+ box-shadow: 00 30px rgba (0,240,255,0.4);
+ border: 2px solid #00f0ff;
+ overflow: hidden;
+}
+.ex-eg-frame {
+  width: 90%;
+  max-width: 500px;
+  height: 80px;
+  margin: 30px auto;
+  background: #000;
+  border: 3px solid #00f0ff;
+  border-radius: 20px;
+  box-shadow: 0 0 25px #00f0ff, inset 0 0 15px #00f0ff;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ex-eg-frame p {
+  position: absolute;
+  font-size: 26px;
+  font-weight: bold;
+  color: #00f0ff;
+  text-shadow: 0 0 10px #00f0ff;
+  margin: 0;
+  opacity: 0;
+}
+.ex-eg-text1, .ex-eg-text2, .ex-eg-text3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.ex-eg-text1 {
+  animation: fadeDown 4s infinite;
+  animation-delay: 0s;
+  z-index: 3;
+}
+
+.ex-eg-text2 {
+  animation: fadeDown 4s infinite;
+  animation-delay: 1.3s;
+  z-index: 2;
+}
+
+.ex-eg-text3 {
+  animation: fadeDown 4s infinite;
+  animation-delay: 2.6s;
+  z-index: 1;
+}
+
+@keyframes fadeDown {
+  0% { transform: translate(-50%, -60%); opacity: 0; }
+  10% { transform: translate(-50%, -50%); opacity: 1; }
+ 30% { transform: translate(-50%, -50%); opacity: 1; }
+  40% { transform: translate(-50%, -40%); opacity: 0; }
+  100% { opacity: 0; }
+}
+.ex-eg-coin {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    
+    border: 4px solid #00f0ff;
+    box-shadow: 
+      0 0 10px #00f0ff,
+      0 0 25px #00f0ff,
+      inset 0 0 15px rgba(0,240,255,0.3);
+    
+    transition: transform 0.3s ease;
+  }
+
+  .ex-eg-coin:hover {
+    transform: scale(1.08);
+  }
+
+  .ex-eg-coin.spin {
+    animation: spin 2s linear;
+  }
+
+  @keyframes spin {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(3600deg); }
+  }
+  .ex-eg-video-wrapper{
+display: flex;
+gap: 20px;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+
+  }
+  .ex-eg-video-wrapper video{
+
+    width: 48%;
+    max-width: 500px;
+  }
+
+  .ex-eg-video-wrapper video:first-child {
+    max-height: 460px;
+    object-fit: contain;
+  }
+
+  .ex-eg-video-card {
+    position: relative;
+    width: 48%;
+    max-width: 500px;
+    overflow: hidden;
+    border: 2px solid #00f0ff;
+    border-radius: 20px;
+    background: #050b13;
+    box-shadow: 0 0 18px rgba(0, 240, 255, 0.35);
+  }
+
+  .ex-eg-video-card:first-child {
+    animation: none;
+  }
+
+  .ex-eg-video-card:nth-child(2) {
+    animation: none;
+  }
+
+  .ex-eg-video-wrapper.is-visible .ex-eg-video-card:first-child {
+    animation: media-from-right 1s cubic-bezier(0.22, 1, 0.36, 1) 0.15s both;
+  }
+
+  .ex-eg-video-wrapper.is-visible .ex-eg-video-card:nth-child(2) {
+    animation: media-from-left 1s cubic-bezier(0.22, 1, 0.36, 1) 0.35s both;
+  }
+
+  @keyframes media-from-left {
+    from { opacity: 0; transform: translateX(-100px) scale(0.9); }
+    to { opacity: 1; transform: translateX(0) scale(1); }
+  }
+
+  @keyframes media-from-right {
+    from { opacity: 0; transform: translateX(100px) scale(0.9); }
+    to { opacity: 1; transform: translateX(0) scale(1); }
+  }
+
+  .ex-eg-video-card video {
+    width: 100%;
+    max-width: none;
+    display: block;
+    cursor: pointer;
+  }
+
+  .ex-eg-video-card:first-child video {
+    max-height: 460px;
+    object-fit: contain;
+  }
+
+  .ex-eg-video-controls {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+  }
+
+  .ex-eg-video-card:hover .ex-eg-video-controls,
+  .ex-eg-video-card:focus-within .ex-eg-video-controls,
+  .ex-eg-video-card.is-playing .ex-eg-video-controls {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .ex-eg-video-control-button {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border: 1px solid rgba(0, 240, 255, 0.7);
+    border-radius: 50%;
+    background: rgba(0, 8, 16, 0.85);
+    color: #00f0ff;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  .ex-eg-video-control-button:hover {
+    background: #00f0ff;
+    color: #001018;
+    box-shadow: 0 0 14px #00f0ff;
+  }
+
+  .ex-eg-video-progress {
+    height: 6px;
+    flex: 1;
+    min-width: 40px;
+    accent-color: #00f0ff;
+    cursor: pointer;
+  }
+
+  .ex-eg-video-time {
+    min-width: 68px;
+    color: #fff;
+    font: 12px/1.2 sans-serif;
+    text-align: center;
+  }
+
+  .ex-eg-video-card:fullscreen {
+    width: 100vw;
+    max-width: none;
+    height: 100vh;
+    border: 0;
+    border-radius: 0;
+    background: #000;
+    box-shadow: none;
+    transform: none;
+    animation: none;
+  }
+
+  .ex-eg-video-card:fullscreen video,
+  .ex-eg-video-card:fullscreen:first-child video {
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    object-fit: contain;
+  }
+
+  .ex-eg-video-card:fullscreen .ex-eg-video-controls {
+    padding: 18px 24px;
+  }
+
+  @media (max-width: 600px) {
+    .ex-eg-video-card {
+      width: 100%;
+    }
+
+    .ex-eg-video-wrapper video:first-child {
+      max-height: 320px;
+    }
+
+    .ex-eg-video-card:first-child video {
+      max-height: 320px;
+    }
+
+    .ex-eg-video-controls {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+.ex-eg-neon-player {
+  display: none;
+  position: relative;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  width: 100%;
+  max-width: 550px; 
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #00f0ff;
+  border-radius: 25px;
+  box-shadow: 0 0 20px #00f0ff, inset 0 0 20px rgba(0, 240, 255, 0.1);
+  font-family: 'Cairo', sans-serif;
+  color: #fff;
+  overflow: hidden;
+  z-index: 1;
+  transform: perspective(1000px) rotateX(5deg);
+  transition: box-shadow 0.15s ease;
+  animation: none;
+}
+
+.ex-eg-neon-player.is-visible {
+  animation: audio-player-in 1.1s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
+}
+
+@keyframes audio-player-in {
+  from {
+    opacity: 0;
+    transform: perspective(1000px) rotateX(5deg) translateY(70px) scale(0.92);
+    box-shadow: 0 0 0 #00f0ff, inset 0 0 0 rgba(0, 240, 255, 0);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(1000px) rotateX(5deg) translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ex-eg-video-card,
+  .ex-eg-neon-player {
+    animation: none;
+  }
+}
+
+.ex-eg-glow-bg {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, #00f0ff, #ff00ff, #00f0ff);
+  animation: rotate 4s linear infinite;
+  z-index: -1;
+  filter: blur(40px);
+  opacity: 0.4;
+}
+@keyframes rotate {
+  to { transform: rotate(360deg); }
+}
+
+.ex-eg-play-btn {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid #00f0ff;
+  background: transparent;
+  color: #00f0ff;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+  flex-shrink: 0;
+  text-shadow: 0 0 10px #00f0ff;
+  box-shadow: 0 0 15px #00f0ff;
+}
+.ex-eg-play-btn:hover {
+  background: #00f0ff;
+  color: #000;
+  box-shadow: 0 0 30px #00f0ff;
+}
+
+.ex-eg-info { flex: 1; }
+.ex-eg-title { font-weight: bold; margin: 0 0 5px 0; text-shadow: 0 0 8px #00f0ff; }
+
+.ex-eg-wave { display: flex; gap: 3px; height: 20px; align-items: flex-end; }
+.ex-eg-wave span {
+  width: 3px;
+  height: 4px;
+  background: #00f0ff;
+  box-shadow: 0 0 5px #00f0ff;
+  animation: wave 0.8s ease-in-out infinite;
+  animation-play-state: paused;
+  transition: height 0.08s ease, box-shadow 0.08s ease;
+}
+.ex-eg-wave span:nth-child(1){ animation-delay: 0.1s; }
+.ex-eg-wave span:nth-child(2){ animation-delay: 0.2s; }
+.ex-eg-wave span:nth-child(3){ animation-delay: 0.3s; }
+.ex-eg-wave span:nth-child(4){ animation-delay: 0.2s; }
+.ex-eg-wave span:nth-child(5){ animation-delay: 0.1s; }
+@keyframes wave {
+  0%, 100% { height: 4px; }
+  50% { height: 20px; }
+}
+
+.ex-eg-progress-container {
+  flex: 2;
+  height: 8px;
+  background: rgba(0, 240, 255, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px #00f0ff;
+}
+.ex-eg-progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #00f0ff, #ff00ff);
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00f0ff;
+  transition: width 0.1s linear;
+}
+
+.ex-eg-time { font-size: 12px; text-shadow: 0 0 5px #00f0ff; min-width: 40px; }
+
+audio { display: none; }
+.ex-eg-contact-panel {
+  position: fixed;
+  top: 50%;
+  right: 88px;
+  z-index: 1002;
+  width: min(340px, calc(100vw - 120px));
+  padding: 24px;
+  direction: rtl;
+  color: #fff;
+  background: linear-gradient(145deg, rgba(5, 11, 19, 0.98), rgba(0, 33, 48, 0.96));
+  border: 1px solid rgba(0, 240, 255, 0.7);
+  border-radius: 22px;
+  box-shadow: 0 0 24px rgba(0, 240, 255, 0.45), inset 0 0 22px rgba(0, 240, 255, 0.08);
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(18px, -50%) scale(0.94);
+  transform-origin: right center;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.ex-eg-contact-panel.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(0, -50%) scale(1);
+}
+
+.ex-eg-contact-panel h2 {
+  margin: 10px 0 6px;
+  color: #00f0ff;
+  font-size: 22px;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.7);
+}
+
+.ex-eg-contact-panel p {
+  margin: 0 0 18px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 14px;
+}
+
+.ex-eg-contact-links {
+  display: grid;
+  gap: 10px;
+}
+
+.ex-eg-contact-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 240, 255, 0.28);
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.ex-eg-contact-link:hover,
+.ex-eg-contact-link:focus-visible {
+  background: rgba(0, 240, 255, 0.14);
+  border-color: #00f0ff;
+  transform: translateX(-4px);
+  outline: none;
+}
+
+.ex-eg-contact-link svg {
+  width: 20px;
+  color: #00f0ff;
+}
+
+.ex-eg-contact-close {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  color: #fff;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.ex-eg-contact-close:hover,
+.ex-eg-contact-close:focus-visible {
+  color: #00f0ff;
+  border-color: #00f0ff;
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .ex-eg-contact-panel {
+    right: 62px;
+    width: min(300px, calc(100vw - 88px));
+    padding: 20px;
+  }
+}
+.ex-eg-rgb-footer {
+  width: 90%;
+  margin: 30px auto;
+  padding: 20px;
+  background: transparent;
+  font-family: sans-serif;
+}
+
+.ex-eg-footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.ex-eg-rgb-box {
+  position: relative;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 15px 25px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  box-shadow: 0 0 15px rgba(255, 0, 128, 0.2);
+  animation: box-glow-anim 15s linear infinite;
+}
+
+.ex-eg-rgb-box::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 22px;
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background-size: 400%;
+  z-index: -1;
+  animation: rgb-glow 6s linear infinite;
+}
+
+.ex-eg-rgb-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background: #030712;
+  z-index: -1;
+}
+
+@keyframes rgb-glow {
+  0% { background-position: 0 0; }
+  100% { background-position: 400% 0; }
+}
+
+@keyframes box-glow-anim {
+  0%, 100% { box-shadow: 0 0 10px rgba(255, 0, 0, 0.4), inset 0 0 5px rgba(255, 0, 0, 0.2); }
+  33% { box-shadow: 0 0 15px rgba(0, 255, 213, 0.4), inset 0 0 5px rgba(0, 255, 213, 0.2); }
+  66% { box-shadow: 0 0 15px rgba(122, 0, 255, 0.4), inset 0 0 5px rgba(122, 0, 255, 0.2); }
+}
+
+.ex-eg-footer-logo {
+  width: 50px;
+  border-radius: 10px;
+}
+
+.ex-eg-text-box p {
+  color: #fff;
+  margin: 0;
+  font-size: 14px;
+}
+
+.ex-eg-text-box strong {
+  color: #00f3ff;
+}
+
+.ex-eg-social-box {
+  gap: 12px;
+}
+
+.ex-eg-social-icon {
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.ex-eg-social-icon:hover {
+  border-color: #00ffd5;
+  background: rgba(0, 255, 213, 0.2);
+  box-shadow: 0 0 10px #00ffd5;
+  transform: scale(1.1);
+}
+
+.ex-eg-section-nav {
+  position: fixed;
+  top: 50%;
+  right: 18px;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  background:
+    linear-gradient(#050b13, #050b13) padding-box,
+    linear-gradient(180deg, #ff004c, #ff9d00, #fff000, #00ff88, #00d2ff, #7a00ff, #ff004c) border-box;
+  box-shadow: 0 0 18px rgba(0, 210, 255, 0.65), inset 0 0 14px rgba(0, 210, 255, 0.2);
+  transform: translateY(-50%);
+  animation: none;
+}
+
+.ex-eg-section-nav a,
+.ex-eg-section-nav button {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  color: #00f0ff;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background:
+    linear-gradient(rgba(0, 8, 16, 0.96), rgba(0, 8, 16, 0.96)) padding-box,
+    conic-gradient(from 0deg, #ff004c, #ff9d00, #fff000, #00ff88, #00d2ff, #7a00ff, #ff004c) border-box;
+  text-decoration: none;
+  text-shadow: 0 0 8px #00f0ff;
+  font-size: 18px;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+  box-shadow: 0 0 8px rgba(0, 210, 255, 0.8), inset 0 0 5px rgba(0, 210, 255, 0.35);
+  transition: color 0.25s ease, background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ex-eg-section-nav button {
+  cursor: pointer;
+}
+
+.ex-eg-section-nav a svg,
+.ex-eg-section-nav button svg {
+  display: block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+}
+
+.ex-eg-section-nav a:hover,
+.ex-eg-section-nav a:focus-visible,
+.ex-eg-section-nav button:hover,
+.ex-eg-section-nav button:focus-visible {
+  color: #001018;
+  background:
+    linear-gradient(#00f0ff, #00f0ff) padding-box,
+    conic-gradient(from 0deg, #ff004c, #ff9d00, #fff000, #00ff88, #00d2ff, #7a00ff, #ff004c) border-box;
+  box-shadow: 0 0 16px #00f0ff, 0 0 28px rgba(0, 240, 255, 0.75);
+  transform: scale(1.12);
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .ex-eg-section-nav {
+    right: 8px;
+    gap: 6px;
+    padding: 7px;
+  }
+
+  .ex-eg-section-nav a,
+  .ex-eg-section-nav button {
+    width: 34px;
+    height: 34px;
+    font-size: 13px;
+  }
+}
+.ex-eg-gallery-container {
+  position: relative;
+  width: 100vw;
+  max-width: none;
+  min-height: 360px;
+  margin: 20px calc(50% - 50vw);
+  overflow: visible;
+  isolation: isolate;
+}
+
+.ex-eg-gallery-track {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(48px, 7vw, 84px);
+  width: 100%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
+  .ex-eg-gallery-title {
+    width: 80%;
+    box-sizing: border-box;
+    margin: 20px auto 0;
+    padding: 12px 40px;
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+    background:
+      linear-gradient(#050b13, #050b13) padding-box,
+      conic-gradient(from 0deg, #ff004c, #ff9d00, #fff000, #00ff88, #00d2ff, #7a00ff, #ff004c) border-box;
+    border: 3px solid transparent;
+    border-radius: 16px;
+    box-shadow: 0 0 12px #00d2ff, 0 0 24px rgba(255, 0, 128, 0.65), inset 0 0 12px rgba(0, 210, 255, 0.25);
+    text-shadow: 0 0 10px #fff, 0 0 18px #00d2ff;
+    animation: rainbow-title-glow 5s linear infinite;
+  }
+
+  @keyframes rainbow-title-glow {
+    to { filter: hue-rotate(360deg); }
+  }
+
+.ex-eg-gallery-item {
+    text-align: center;
+    background: #151515;
+    padding: 15px;
+    border-radius: 12px;
+  border: 2px solid #00d2ff;
+  box-shadow: 0 8px 0 #006b80, 0 0 18px #00d2ff, inset 0 0 14px rgba(0, 210, 255, 0.25);
+    width: 250px;
+    animation: none;
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+  .ex-eg-gallery-entry {
+    width: clamp(150px, 20vw, 220px);
+    flex: 0 0 clamp(150px, 20vw, 220px);
+    text-align: center;
+  }
+
+  .ex-eg-gallery-item {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 1000px) {
+    .ex-eg-gallery-container {
+      min-height: 330px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .ex-eg-gallery-container {
+      min-height: 285px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ex-eg-gallery-item,
+    .ex-eg-gallery-title,
+    .ex-eg-companies-track,
+    .ex-eg-company-card { animation: none !important; }
+  }
+
+@keyframes strongAppear {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.ex-eg-gallery-item:nth-child(1) { animation-delay: 0.1s; }
+.ex-eg-gallery-item:nth-child(2) { animation-delay: 0.2s; }
+.ex-eg-gallery-item:nth-child(3) { animation-delay: 0.3s; }
+.ex-eg-gallery-item:nth-child(4) { animation-delay: 0.4s; }
+
+.ex-eg-gallery-container.is-visible .ex-eg-gallery-entry:nth-child(4n + 1) .ex-eg-gallery-item {
+  animation: gallery-from-top 0.9s ease-out 0.1s both;
+}
+
+.ex-eg-gallery-container.is-visible .ex-eg-gallery-entry:nth-child(4n + 2) .ex-eg-gallery-item {
+  animation: gallery-from-bottom 0.9s ease-out 0.25s both;
+}
+
+.ex-eg-gallery-container.is-visible .ex-eg-gallery-entry:nth-child(4n + 3) .ex-eg-gallery-item {
+  animation: gallery-from-right 0.9s ease-out 0.4s both;
+}
+
+.ex-eg-gallery-container.is-visible .ex-eg-gallery-entry:nth-child(4n + 4) .ex-eg-gallery-item {
+  animation: gallery-from-left 0.9s ease-out 0.55s both;
+}
+
+@keyframes gallery-from-top {
+  from { opacity: 0; transform: translateY(-90px) scale(0.55) rotate(-8deg); }
+  to { opacity: 1; transform: translateY(0) scale(1) rotate(0); }
+}
+
+@keyframes gallery-from-bottom {
+  from { opacity: 0; transform: translateY(90px) scale(0.55) rotate(8deg); }
+  to { opacity: 1; transform: translateY(0) scale(1) rotate(0); }
+}
+
+@keyframes gallery-from-right {
+  from { opacity: 0; transform: translateX(90px) scale(0.55) rotate(8deg); }
+  to { opacity: 1; transform: translateX(0) scale(1) rotate(0); }
+}
+
+@keyframes gallery-from-left {
+  from { opacity: 0; transform: translateX(-90px) scale(0.55) rotate(-8deg); }
+  to { opacity: 1; transform: translateX(0) scale(1) rotate(0); }
+}
+
+.ex-eg-gallery-item:hover {
+    transform: translateY(-8px) scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+.ex-eg-gallery-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+  border: 0;
+  box-shadow: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.ex-eg-gallery-item img:hover {
+    box-shadow: 0 0 25px #00d2ff, 0 0 50px #00d2ff, 0 0 80px #00d2ff;
+}
+
+.ex-eg-companies-section {
+  width: 100vw;
+  margin: 30px calc(50% - 50vw);
+  overflow: hidden;
+}
+
+.ex-eg-companies-title {
+  width: min(80%, 700px);
+  box-sizing: border-box;
+  margin: 0 auto 20px;
+  padding: 12px 24px;
+  color: #fff;
+  text-align: center;
+  font-size: 26px;
+  background: #050b13;
+  border: 2px solid #00d2ff;
+  border-radius: 14px;
+  box-shadow: 0 0 16px rgba(0, 210, 255, 0.7), inset 0 0 12px rgba(0, 210, 255, 0.2);
+}
+
+.ex-eg-companies-window {
+  width: 100%;
+  padding: 24px 0 34px;
+  overflow: visible;
+}
+
+.ex-eg-companies-track {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 34px;
+  width: 100%;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.ex-eg-company-card {
+  display: grid;
+  place-items: center;
+  gap: 10px;
+  width: 150px;
+  flex: 0 0 150px;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(45px) scale(0.7);
+}
+
+.ex-eg-companies-section.is-visible .ex-eg-company-card:nth-child(4n + 1) {
+  animation: company-from-top 0.8s ease-out 0.1s both;
+}
+
+.ex-eg-companies-section.is-visible .ex-eg-company-card:nth-child(4n + 2) {
+  animation: company-from-bottom 0.8s ease-out 0.25s both;
+}
+
+.ex-eg-companies-section.is-visible .ex-eg-company-card:nth-child(4n + 3) {
+  animation: company-from-right 0.8s ease-out 0.4s both;
+}
+
+.ex-eg-companies-section.is-visible .ex-eg-company-card:nth-child(4n + 4) {
+  animation: company-from-left 0.8s ease-out 0.55s both;
+}
+
+.ex-eg-company-logo {
+  width: 118px;
+  height: 118px;
+  padding: 6px;
+  object-fit: cover;
+  border: 3px solid #00d2ff;
+  border-radius: 50%;
+  background: #050b13;
+  box-shadow: 0 0 12px #00d2ff, 0 0 28px rgba(0, 210, 255, 0.65), inset 0 0 12px rgba(0, 210, 255, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ex-eg-company-logo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #00f0ff, 0 0 42px rgba(0, 240, 255, 0.8);
+}
+
+.ex-eg-company-name {
+  margin: 0;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 0 0 8px #00d2ff;
+}
+
+@keyframes company-from-top {
+  from { opacity: 0; transform: translateY(-55px) scale(0.7); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes company-from-bottom {
+  from { opacity: 0; transform: translateY(55px) scale(0.7); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes company-from-right {
+  from { opacity: 0; transform: translateX(55px) scale(0.7); }
+  to { opacity: 1; transform: translateX(0) scale(1); }
+}
+
+@keyframes company-from-left {
+  from { opacity: 0; transform: translateX(-55px) scale(0.7); }
+  to { opacity: 1; transform: translateX(0) scale(1); }
+}
+
+@media (max-width: 600px) {
+  .ex-eg-company-card {
+    width: 120px;
+    flex-basis: 120px;
+  }
+
+  .ex-eg-company-logo {
+    width: 92px;
+    height: 92px;
+  }
+}
+
+  .ex-eg-gallery-caption {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0 0;
+    padding: 10px 16px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    background:
+      linear-gradient(#000, #000) padding-box,
+      conic-gradient(from 0deg, #ff004c, #ff9d00, #fff000, #00ff88, #00d2ff, #7a00ff, #ff004c) border-box;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 10px #00d2ff, inset 0 0 10px rgba(0, 210, 255, 0.35);
+    text-shadow: 0 0 5px rgba(0, 210, 255, 0.5);
+  }
+
+.ex-eg-lightbox-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.ex-eg-lightbox-modal img {
+  width: auto;
+  height: auto;
+    max-width: 85%;
+    max-height: 85%;
+  object-fit: contain;
+    border-radius: 10px;
+    border: 3px solid #00d2ff;
+    box-shadow: 0 0 40px #00d2ff, 0 0 80px #00d2ff, 0 0 120px #00d2ff;
+    transform: scale(0.3);
+    animation: lightboxPop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes lightboxPop {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.ex-eg-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #00d2ff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0 0 15px #00d2ff;
+    transition: transform 0.2s ease;
+}
+
+.ex-eg-close-btn:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+}
+</STyle>
+
+<body>
+<nav class="ex-eg-section-nav" aria-label="التنقل بين أقسام الصفحة">
+  <a href="#ex-eg-home" title="الرئيسية" aria-label="الرئيسية"><i data-lucide="house"></i></a>
+
+  <a href="#ex-eg-videos" title="الفيديوهات" aria-label="الفيديوهات"><i data-lucide="video"></i></a>
+  <a href="#ex-eg-work" title="أعمالنا" aria-label="أعمالنا"><i data-lucide="images"></i></a>
+  <a href="#ex-eg-companies" title="الشركات" aria-label="الشركات"><i data-lucide="building-2"></i></a>
+  <button class="ex-eg-contact-toggle" id="contactToggle" type="button" title="التواصل" aria-label="فتح قائمة التواصل" aria-controls="contactPanel" aria-expanded="false"><i data-lucide="contact"></i></button>
+</nav>
+
+<aside class="ex-eg-contact-panel" id="contactPanel" aria-hidden="true">
+  <button class="ex-eg-contact-close" id="contactClose" type="button" aria-label="إغلاق قائمة التواصل"><i data-lucide="x"></i></button>
+  <h2>تواصل معنا</h2>
+  <p>نحن جاهزون للاستماع إليك والرد على استفساراتك.</p>
+  <div class="ex-eg-contact-links">
+    <a href="https://wa.me/+201102052489" target="_blank" rel="noopener noreferrer" class="ex-eg-contact-link"><i data-lucide="message-circle"></i><span>تواصل عبر واتساب</span></a>
+    <a href="https://www.youtube.com/@ex-eg" target="_blank" rel="noopener noreferrer" class="ex-eg-contact-link"><i data-lucide="play-circle"></i><span>تابعنا على يوتيوب</span></a>
+    <a href="https://ex-eg.github.io/" target="_blank" rel="noopener noreferrer" class="ex-eg-contact-link"><i data-lucide="globe-2"></i><span>زيارة موقعنا</span></a>
+  </div>
+</aside>
+
+<div class="ex-eg-profile-wrap" id="ex-eg-home">
+  <img class="ex-eg-profile-image" controls width="400" height="400" src="https://i.ibb.co/dwxdC5Zj/Gemini-Generated-Image-zas83tzas83tzas8-1.jpg" alt="">
+</div>
+ <div class="ex-eg-frame">
+  <p class="ex-eg-text1">ex eg 2026</p>
+  <p class="ex-eg-text2">المطور
+  </p>
+   <p class="ex-eg-text3">Ex:Moaz Elgohary </p>
+ </div>
+
+ <div class="ex-eg-neon-player" id="ex-eg-audio">
+  <audio id="audio" src="luvvoice.com-20260910-Xn27w2.mp3" preload="auto" autoplay></audio>
+  <div class="ex-eg-glow-bg"></div>
+  <button class="ex-eg-play-btn" id="playBtn" type="button" aria-label="تشغيل الصوت">▶</button>
+  <div class="ex-eg-info">
+    <p class="ex-eg-title">كوتي كوتي</p>
+    <div class="ex-eg-wave">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+  </div>
+  <div class="ex-eg-progress-container" id="progressContainer">
+    <div class="ex-eg-progress-bar" id="progressBar"></div>
+  </div>
+  <span class="ex-eg-time" id="time">0:00</span>
+ </div>
+ 
+
+
+ 
+<h2 class="ex-eg-gallery-title">أعمالنا</h2>
+
+<div class="ex-eg-video-wrapper" id="ex-eg-videos">
+  <div class="ex-eg-video-card">
+    <video playsinline preload="metadata" src="Black, White and Red Modern Clean Subscribe Animated Mobile Video.mp4"></video>
+
+
+    <div class="ex-eg-video-controls">
+      <button class="ex-eg-video-control-button ex-eg-video-play" type="button" aria-label="تشغيل الفيديو"><i data-lucide="play"></i></button>
+      <input class="ex-eg-video-progress" type="range" min="0" max="100" value="0" aria-label="تقدم الفيديو">
+      <span class="ex-eg-video-time">0:00 / 0:00</span>
+      <button class="ex-eg-video-control-button ex-eg-video-mute" type="button" aria-label="كتم الصوت"><i data-lucide="volume-2"></i></button>
+      <button class="ex-eg-video-control-button ex-eg-video-fullscreen" type="button" aria-label="ملء الشاشة"><i data-lucide="maximize"></i></button>
+    </div>
+  </div>
+  <div class="ex-eg-video-card">
+    <video playsinline preload="metadata" src="Pink Retro Subscribe Youtube Video (1).mp4"></video>
+    <div class="ex-eg-video-controls">
+      <button class="ex-eg-video-control-button ex-eg-video-play" type="button" aria-label="تشغيل الفيديو"><i data-lucide="play"></i></button>
+      <input class="ex-eg-video-progress" type="range" min="0" max="100" value="0" aria-label="تقدم الفيديو">
+      <span class="ex-eg-video-time">0:00 / 0:00</span>
+      <button class="ex-eg-video-control-button ex-eg-video-mute" type="button" aria-label="كتم الصوت"><i data-lucide="volume-2"></i></button>
+      <button class="ex-eg-video-control-button ex-eg-video-fullscreen" type="button" aria-label="ملء الشاشة"><i data-lucide="maximize"></i></button>
+    </div>
+  </div>
+</div>
+
+<h2 class="ex-eg-gallery-title">أعمالنا</h2>
+<div class="ex-eg-gallery-container" id="ex-eg-work">
+  <div class="ex-eg-gallery-track">
+    <div class="ex-eg-gallery-entry">
+      <div class="ex-eg-gallery-item">
+        <img src="https://i.ibb.co/dwxdC5Zj/Gemini-Generated-Image-zas83tzas83tzas8-1.jpg" alt="وصف" class="ex-eg-lightbox-trigger">
+      </div>
+      <p class="ex-eg-gallery-caption">النص</p>
+    </div>
+    <div class="ex-eg-gallery-entry">
+      <div class="ex-eg-gallery-item">
+        <img src="https://i.ibb.co/dwxdC5Zj/Gemini-Generated-Image-zas83tzas83tzas8-1.jpg" alt="وصف" class="ex-eg-lightbox-trigger">
+      </div>
+      <p class="ex-eg-gallery-caption">النص</p>
+    </div>
+    <div class="ex-eg-gallery-entry">
+      <div class="ex-eg-gallery-item">
+        <img src="https://i.ibb.co/dwxdC5Zj/Gemini-Generated-Image-zas83tzas83tzas8-1.jpg" alt="وصف" class="ex-eg-lightbox-trigger">
+      </div>
+      <p class="ex-eg-gallery-caption">النص</p>
+    </div>
+    <div class="ex-eg-gallery-entry">
+      <div class="ex-eg-gallery-item">
+        <img src="https://i.ibb.co/dwxdC5Zj/Gemini-Generated-Image-zas83tzas83tzas8-1.jpg" alt="وصف" class="ex-eg-lightbox-trigger">
+      </div>
+      <p class="ex-eg-gallery-caption">النص</p>
+    </div>
+  </div>
+</div>
+
+<section class="ex-eg-companies-section" id="ex-eg-companies" aria-labelledby="companies-title">
+  <h2 class="ex-eg-companies-title" id="companies-title">شركائنا</h2>
+  <div class="ex-eg-companies-window">
+    <div class="ex-eg-companies-track">
+      <div class="ex-eg-company-card">
+        <img class="ex-eg-company-logo ex-eg-lightbox-trigger" src="https://i.ibb.co/dwxdC5Zj/Gemini-Generated-Image-zas83tzas83tzas8-1.jpg" alt="">
+            <p class="ex-eg-gallery-caption">النص</p>
+
+      </div>
+      <div class="ex-eg-company-card">
+        <img class="ex-eg-company-logo ex-eg-lightbox-trigger" src="https://i.ibb.co/dwxdC5Zj/Gemini-Generated-Image-zas83tzas83tzas8-1.jpg" alt="">
+              <p class="ex-eg-gallery-caption">النص</p>
+
+      </div>
+      <div class="ex-eg-company-card">
+        <img class="ex-eg-company-logo ex-eg-lightbox-trigger" src="https://i.ibb.co/dwxdC5Zj/Gemini-Generated-Image-zas83tzas83tzas8-1.jpg" alt="">
+              <p class="ex-eg-gallery-caption">النص</p>
+
+      </div>
+      <div class="ex-eg-company-card">
+        <img class="ex-eg-company-logo ex-eg-lightbox-trigger" src="https://i.ibb.co/dwxdC5Zj/Gemini-Generated-Image-zas83tzas83tzas8-1.jpg" alt="">
+            <p class="ex-eg-gallery-caption">النص</p>
+
+      </div>
+      <div class="ex-eg-company-card">
+        <img class="ex-eg-company-logo ex-eg-lightbox-trigger" src="https://i.ibb.co/dwxdC5Zj/Gemini-Generated-Image-zas83tzas83tzas8-1.jpg" alt="">
+         <p class="ex-eg-gallery-caption">النص</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="lightbox" class="ex-eg-lightbox-modal">
+    <span class="ex-eg-close-btn">&times;</span>
+    <img id="lightbox-img" src="" alt="صورة مكبرة">
+</div>
+<footer class="ex-eg-rgb-footer" id="ex-eg-contact">
+  <div class="ex-eg-footer-container">
+    
+    <div class="ex-eg-rgb-box ex-eg-logo-box">
+      <img src="https://i.ibb.co/dwxdC5Zj/Gemini-Generated-Image-zas83tzas83tzas8-1.jpg" alt="Logo" class="ex-eg-footer-logo">
+    </div>
+
+    <div class="ex-eg-rgb-box ex-eg-text-box">
+      <p>Developed by <strong>Moaz Elgohary</strong> for <strong>EX EG</strong></p>
+    </div>
+
+    <div class="ex-eg-rgb-box ex-eg-social-box">
+      <a href="https://wa.me/+201102052489" target="_blank" rel="noopener noreferrer" class="ex-eg-social-icon"><i data-lucide="message-circle"></i></a>
+      <a href="https://www.youtube.com/@ex-eg" target="_blank" rel="noopener noreferrer" class="ex-eg-social-icon"><i data-lucide="play-circle"></i></a>
+      <a href="https://ex-eg.github.io/" target="_blank" rel="noopener noreferrer" class="ex-eg-social-icon"><i data-lucide="globe-2"></i></a>
+    </div>
+
+  </div>
+</footer>
+<script>
+lucide.createIcons();
+
+document.querySelectorAll('.ex-eg-section-nav a[href^="#"]').forEach((sectionLink) => {
+  sectionLink.addEventListener('click', (event) => {
+    const targetSection = document.querySelector(sectionLink.getAttribute('href'));
+
+    if (!targetSection) return;
+
+    event.preventDefault();
+    targetSection.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center'
+    });
+  });
+});
+
+const contactToggle = document.getElementById('contactToggle');
+const contactPanel = document.getElementById('contactPanel');
+const contactClose = document.getElementById('contactClose');
+
+function setContactPanel(isOpen) {
+  contactPanel.classList.toggle('is-open', isOpen);
+  contactPanel.setAttribute('aria-hidden', String(!isOpen));
+  contactToggle.setAttribute('aria-expanded', String(isOpen));
+  contactToggle.setAttribute('aria-label', isOpen ? 'إغلاق قائمة التواصل' : 'فتح قائمة التواصل');
+  if (isOpen) contactClose.focus();
+}
+
+contactToggle.addEventListener('click', () => {
+  setContactPanel(!contactPanel.classList.contains('is-open'));
+});
+
+contactClose.addEventListener('click', () => setContactPanel(false));
+
+document.addEventListener('click', (event) => {
+  if (contactPanel.classList.contains('is-open') && !contactPanel.contains(event.target) && !contactToggle.contains(event.target)) {
+    setContactPanel(false);
+  }
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && contactPanel.classList.contains('is-open')) {
+    setContactPanel(false);
+    contactToggle.focus();
+  }
+});
+
+const audio = document.getElementById('audio');
+const playBtn = document.getElementById('playBtn');
+const progressBar = document.getElementById('progressBar');
+const progressContainer = document.getElementById('progressContainer');
+const timeEl = document.getElementById('time');
+const wave = document.querySelector('.ex-eg-wave');
+const player = document.querySelector('.ex-eg-neon-player');
+const bars = [...document.querySelectorAll('.ex-eg-wave span')];
+let audioContext;
+let analyser;
+let source;
+let frequencyData;
+let animationFrameId;
+
+async function startAudio() {
+  try {
+    audio.volume = 1;
+    await audio.play();
+    document.removeEventListener('click', startAudio);
+    document.removeEventListener('touchstart', startAudio);
+    document.removeEventListener('keydown', startAudio);
+  } catch (error) {
+    return;
+  }
+}
+
+startAudio();
+document.addEventListener('click', startAudio, { once: true });
+document.addEventListener('touchstart', startAudio, { once: true });
+document.addEventListener('keydown', startAudio, { once: true });
+
+function setupVisualizer() {
+  if (audioContext) return;
+
+  audioContext = new (window.AudioContext || window.webkitAudioContext)();
+  analyser = audioContext.createAnalyser();
+  analyser.fftSize = 128;
+  source = audioContext.createMediaElementSource(audio);
+  source.connect(analyser);
+  analyser.connect(audioContext.destination);
+  frequencyData = new Uint8Array(analyser.frequencyBinCount);
+}
+
+function updateVisualizer() {
+  if (!analyser) return;
+
+  analyser.getByteFrequencyData(frequencyData);
+  let totalLevel = 0;
+
+  bars.forEach((bar, index) => {
+    const start = Math.floor(index * frequencyData.length / bars.length);
+    const end = Math.max(start + 1, Math.floor((index + 1) * frequencyData.length / bars.length));
+    const band = frequencyData.slice(start, end);
+    const level = band.reduce((sum, value) => sum + value, 0) / band.length / 255;
+    totalLevel += level;
+    bar.style.height = `${4 + level * 16}px`;
+    bar.style.boxShadow = `0 0 ${5 + level * 18}px #00f0ff`;
+  });
+
+  const averageLevel = totalLevel / bars.length;
+  const borderHue = 190 - averageLevel * 190;
+  const audioColor = `hsl(${borderHue}, 100%, 55%)`;
+  player.style.borderColor = audioColor;
+  player.style.boxShadow = `0 0 ${20 + averageLevel * 35}px #00f0ff, inset 0 0 ${20 + averageLevel * 20}px rgba(0, 240, 255, ${0.1 + averageLevel * 0.25})`;
+  animationFrameId = requestAnimationFrame(updateVisualizer);
+}
+
+function stopVisualizer() {
+  cancelAnimationFrame(animationFrameId);
+  bars.forEach((bar) => {
+    bar.style.height = '4px';
+    bar.style.boxShadow = '0 0 5px #00f0ff';
+  });
+  player.style.borderColor = '#00f0ff';
+  player.style.boxShadow = '0 0 20px #00f0ff, inset 0 0 20px rgba(0, 240, 255, 0.1)';
+}
+
+playBtn.addEventListener('click', async () => {
+  if (audio.paused) {
+    try {
+      setupVisualizer();
+      if (audioContext.state === 'suspended') await audioContext.resume();
+    } catch (error) {
+      audioContext = null;
+      analyser = null;
+      console.warn('Visualizer unavailable; continuing with normal audio playback.', error);
+    }
+
+    try {
+      await audio.play();
+      playBtn.innerHTML = '❚❚';
+      wave.style.animationPlayState = 'running';
+      if (analyser) updateVisualizer();
+    } catch (error) {
+      playBtn.innerHTML = '▶';
+      wave.style.animationPlayState = 'paused';
+      console.error('Audio playback failed.', error);
+      alert('تعذر تشغيل ملف الصوت. تأكد من وجود ملف luvvoice.com-20260910-Xn27w2.mp3 بجانب الصفحة.');
+    }
+  } else {
+    audio.pause();
+    playBtn.innerHTML = '▶';
+    wave.style.animationPlayState = 'paused';
+    stopVisualizer();
+  }
+});
+
+audio.addEventListener('ended', () => {
+  playBtn.innerHTML = '▶';
+  wave.style.animationPlayState = 'paused';
+  stopVisualizer();
+});
+
+audio.addEventListener('timeupdate', () => {
+  const progress = (audio.currentTime / audio.duration) * 100;
+  progressBar.style.width = `${progress}%`;
+  timeEl.textContent = formatTime(audio.currentTime);
+});
+
+progressContainer.addEventListener('click', (e) => {
+  const width = progressContainer.clientWidth;
+  const clickX = e.offsetX;
+  audio.currentTime = (clickX / width) * audio.duration;
+});
+
+function formatTime(sec){
+  if(isNaN(sec)) return "0:00";
+  const minutes = Math.floor(sec / 60);
+  const seconds = Math.floor(sec % 60);
+  return `${minutes}:${seconds < 10? '0' : ''}${seconds}`;
+}
+
+document.querySelectorAll('.ex-eg-video-card').forEach((card) => {
+  const video = card.querySelector('video');
+  const playButton = card.querySelector('.ex-eg-video-play');
+  const progress = card.querySelector('.ex-eg-video-progress');
+  const time = card.querySelector('.ex-eg-video-time');
+  const muteButton = card.querySelector('.ex-eg-video-mute');
+  const fullscreenButton = card.querySelector('.ex-eg-video-fullscreen');
+
+  const updateVideoTime = () => {
+    const duration = Number.isFinite(video.duration) ? video.duration : 0;
+    const percentage = duration ? (video.currentTime / duration) * 100 : 0;
+    progress.value = percentage;
+    time.textContent = `${formatTime(video.currentTime)} / ${formatTime(duration)}`;
+  };
+
+  const togglePlay = async () => {
+    if (video.paused) {
+      await video.play();
+    } else {
+      video.pause();
+    }
+  };
+
+  playButton.addEventListener('click', () => togglePlay().catch(() => {}));
+  video.addEventListener('click', () => togglePlay().catch(() => {}));
+  video.addEventListener('play', () => {
+    card.classList.add('is-playing');
+    playButton.innerHTML = '<i data-lucide="pause"></i>';
+    lucide.createIcons();
+  });
+  video.addEventListener('pause', () => {
+    card.classList.remove('is-playing');
+    playButton.innerHTML = '<i data-lucide="play"></i>';
+    lucide.createIcons();
+  });
+  video.addEventListener('ended', () => {
+    card.classList.remove('is-playing');
+    playButton.innerHTML = '<i data-lucide="play"></i>';
+    lucide.createIcons();
+  });
+  video.addEventListener('timeupdate', updateVideoTime);
+  video.addEventListener('loadedmetadata', updateVideoTime);
+  progress.addEventListener('input', () => {
+    if (video.duration) video.currentTime = (progress.value / 100) * video.duration;
+  });
+  muteButton.addEventListener('click', () => {
+    video.muted = !video.muted;
+    muteButton.innerHTML = video.muted
+      ? '<i data-lucide="volume-x"></i>'
+      : '<i data-lucide="volume-2"></i>';
+    lucide.createIcons();
+  });
+  fullscreenButton.addEventListener('click', () => {
+    if (document.fullscreenElement) {
+      document.exitFullscreen();
+    } else {
+      card.requestFullscreen().catch(() => {});
+    }
+  });
+  document.addEventListener('fullscreenchange', () => {
+    fullscreenButton.innerHTML = document.fullscreenElement === card
+      ? '<i data-lucide="minimize"></i>'
+      : '<i data-lucide="maximize"></i>';
+    lucide.createIcons();
+  });
+});
+
+</script>
+<script>
+  const gallerySection = document.querySelector('.ex-eg-gallery-container');
+
+  const resetGallery = () => {
+    gallerySection.classList.remove('is-visible');
+  };
+
+  const startGallery = () => {
+    gallerySection.classList.add('is-visible');
+  };
+
+  const galleryObserver = new IntersectionObserver(([entry]) => {
+    if (entry.isIntersecting) {
+      if (!gallerySection.classList.contains('is-visible')) startGallery();
+    } else {
+      resetGallery();
+    }
+  }, { threshold: 0.35 });
+
+  galleryObserver.observe(gallerySection);
+
+  const mediaObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      entry.target.classList.toggle('is-visible', entry.isIntersecting);
+    });
+  }, { threshold: 0.25 });
+
+  mediaObserver.observe(document.querySelector('.ex-eg-neon-player'));
+  mediaObserver.observe(document.querySelector('.ex-eg-video-wrapper'));
+  mediaObserver.observe(document.querySelector('.ex-eg-profile-wrap'));
+
+  const companiesSection = document.querySelector('.ex-eg-companies-section');
+  mediaObserver.observe(companiesSection);
+
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.querySelector('.ex-eg-close-btn');
+
+    document.querySelectorAll('.ex-eg-lightbox-trigger').forEach(img => {
+        img.addEventListener('click', function() {
+            lightbox.style.display = 'flex';
+            setTimeout(() => {
+                lightbox.style.opacity = '1';
+            }, 10);
+            lightboxImg.src = this.src;
+        });
+    });
+
+    function closeLightbox() {
+        lightbox.style.opacity = '0';
+        setTimeout(() => {
+            lightbox.style.display = 'none';
+        }, 300);
+    }
+
+    closeBtn.addEventListener('click', closeLightbox);
+
+    lightbox.addEventListener('click', function(e) {
+        if (e.target !== lightboxImg) {
+            closeLightbox();
+        }
+    });
+</script>
+<body>
+</html>
