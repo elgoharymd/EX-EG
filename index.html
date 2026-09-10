@@ -2,15 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6398208390358774"
-     crossorigin="anonymous"></script>
-    <meta name="google-site-verification" content="fYq5UAE3YF0optybDXt49Tw-gltaRaZeMCgMTLE4NKU" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="color-scheme" content="dark">
     <script src="https://unpkg.com/lucide@0.468.0" integrity="sha384-uTYyvsSSUZeaPhb5RbKlQa0zY/WpX/QHfvg2mczXyBQOpkWPEDy9lczyp+w7SKXu" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="https://i.ibb.co/JRRsydPb/Gemini-Generated-Image-v16pasv16pasv16p.jpg">
-    <title> تصميم  </title>
+    <title>EX-EG</title>
 </head>
    
 <STyle>
@@ -20,6 +17,13 @@ html {
 
 body {
   margin: 0;
+  font-family: 'Cairo', 'Tahoma', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   padding: 40px 20px;
   min-height: 100vh;
   display: flex;
@@ -37,6 +41,25 @@ body {
   position: relative;
   box-sizing: border-box;
   overflow-x: hidden;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+  font-weight: 800;
 }
 
 body::after {
@@ -369,17 +392,17 @@ flex-wrap: wrap;
     width: 34px;
     height: 34px;
     padding: 0;
-    border: 1px solid rgba(0, 240, 255, 0.7);
-    border-radius: 50%;
-    background: rgba(0, 8, 16, 0.85);
+    border: 0;
+    border-radius: 0;
+    background: transparent;
     color: #00f0ff;
     cursor: pointer;
     flex-shrink: 0;
   }
 
   .ex-eg-video-control-button:hover {
-    background: #00f0ff;
-    color: #001018;
+    background: rgba(0, 240, 255, 0.12);
+    color: #ffffff;
     box-shadow: 0 0 14px #00f0ff;
   }
 
@@ -394,7 +417,7 @@ flex-wrap: wrap;
   .ex-eg-video-time {
     min-width: 68px;
     color: #fff;
-    font: 12px/1.2 sans-serif;
+    font: 700 12px/1.4 'Cairo', 'Tahoma', sans-serif;
     text-align: center;
   }
 
@@ -670,7 +693,8 @@ audio { display: none; }
   margin: 30px auto;
   padding: 20px;
   background: transparent;
-  font-family: sans-serif;
+  font-family: 'Cairo', 'Tahoma', sans-serif;
+  font-weight: 700;
 }
 
 .ex-eg-footer-container {
@@ -1206,6 +1230,7 @@ audio { display: none; }
 <body>
 <nav class="ex-eg-section-nav" aria-label="التنقل بين أقسام الصفحة">
   <a href="#ex-eg-home" title="الرئيسية" aria-label="الرئيسية"><i data-lucide="house"></i></a>
+  <a href="#pricing-section" title="باقات تطوير المنصات والأنظمة الرقمية" aria-label="باقات تطوير المنصات والأنظمة الرقمية"><i data-lucide="package-check"></i></a>
 
   <a href="#ex-eg-videos" title="الفيديوهات" aria-label="الفيديوهات"><i data-lucide="video"></i></a>
   <a href="#ex-eg-work" title="أعمالنا" aria-label="أعمالنا"><i data-lucide="images"></i></a>
@@ -1218,7 +1243,7 @@ audio { display: none; }
   <h2>تواصل معنا</h2>
   <p>نحن جاهزون للاستماع إليك والرد على استفساراتك.</p>
   <div class="ex-eg-contact-links">
-    <a href="https://wa.me/+201102052489" target="_blank" rel="noopener noreferrer" class="ex-eg-contact-link"><i data-lucide="message-circle"></i><span>تواصل عبر واتساب</span></a>
+    <a href="https://wa.me/+201102052489" target="_blank" rel="noopener noreferrer" class="ex-eg-contact-link"><i data-lucide="message-circle"></i><span>تواصل معنا</span></a>
     <a href="https://www.youtube.com/@ex-eg" target="_blank" rel="noopener noreferrer" class="ex-eg-contact-link"><i data-lucide="play-circle"></i><span>تابعنا على يوتيوب</span></a>
     <a href="https://ex-eg.github.io/" target="_blank" rel="noopener noreferrer" class="ex-eg-contact-link"><i data-lucide="globe-2"></i><span>زيارة موقعنا</span></a>
   </div>
@@ -1347,6 +1372,424 @@ audio { display: none; }
     <span class="ex-eg-close-btn">&times;</span>
     <img id="lightbox-img" src="" alt="صورة مكبرة">
 </div>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  #pricing-section {
+    font-family: 'Cairo', sans-serif;
+  }
+  
+  .ex-eg-glass-card {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+  .ex-eg-glass-card:hover {
+    border-color: rgba(59, 130, 246, 0.7);
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5), 0 0 25px rgba(59, 130, 246, 0.25);
+  }
+
+  .ex-eg-glass-card-featured {
+    background: rgba(59, 130, 246, 0.04);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(59, 130, 246, 0.8); 
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5), 0 0 35px rgba(59, 130, 246, 0.35);
+  }
+  .ex-eg-glass-card-featured:hover {
+    border-color: rgba(59, 130, 246, 1);
+    box-shadow: 0 16px 50px 0 rgba(0, 0, 0, 0.6), 0 0 50px rgba(59, 130, 246, 0.7);
+  }
+
+  #pricing-section .ex-eg-glass-card,
+  #pricing-section .ex-eg-glass-card-featured {
+    direction: rtl;
+    text-align: right;
+    overflow: visible;
+    isolation: isolate;
+    color: #f8fbff;
+    background:
+      radial-gradient(circle at 15% 0%, rgba(0, 210, 255, 0.2), transparent 42%),
+      radial-gradient(circle at 90% 100%, rgba(122, 0, 255, 0.2), transparent 45%),
+      linear-gradient(145deg, rgba(8, 20, 35, 0.92), rgba(4, 8, 18, 0.86));
+    border-color: rgba(0, 210, 255, 0.65);
+    box-shadow:
+      0 0 14px rgba(0, 210, 255, 0.35),
+      0 0 34px rgba(0, 120, 255, 0.2),
+      inset 0 0 24px rgba(0, 210, 255, 0.1);
+  }
+
+  #pricing-section .ex-eg-glass-card-featured {
+    background:
+      radial-gradient(circle at 50% 0%, rgba(0, 240, 255, 0.25), transparent 48%),
+      radial-gradient(circle at 100% 100%, rgba(0, 90, 255, 0.28), transparent 48%),
+      linear-gradient(145deg, rgba(7, 25, 48, 0.95), rgba(4, 8, 20, 0.9));
+    border-color: rgba(0, 240, 255, 0.95);
+    box-shadow:
+      0 0 18px rgba(0, 240, 255, 0.65),
+      0 0 48px rgba(0, 100, 255, 0.32),
+      inset 0 0 30px rgba(0, 240, 255, 0.14);
+  }
+
+  #pricing-section .ex-eg-glass-card:hover,
+  #pricing-section .ex-eg-glass-card:focus-within {
+    border-color: #00f0ff;
+    transform: translateY(-12px) scale(1.02);
+    box-shadow:
+      0 0 18px rgba(0, 240, 255, 0.95),
+      0 0 42px rgba(0, 210, 255, 0.65),
+      0 0 78px rgba(122, 0, 255, 0.38),
+      inset 0 0 28px rgba(0, 240, 255, 0.24);
+  }
+
+  #pricing-section .ex-eg-glass-card-featured:hover,
+  #pricing-section .ex-eg-glass-card-featured:focus-within {
+    border-color: #7affff;
+    transform: translateY(-14px) scale(1.03);
+    box-shadow:
+      0 0 22px rgba(0, 240, 255, 1),
+      0 0 52px rgba(0, 210, 255, 0.8),
+      0 0 96px rgba(122, 0, 255, 0.5),
+      inset 0 0 34px rgba(0, 240, 255, 0.3);
+  }
+
+  #pricing-section .ex-eg-pricing-reveal h3 {
+    color: #ffffff;
+    line-height: 1.35;
+    text-shadow: 0 0 12px rgba(0, 210, 255, 0.28);
+  }
+
+  #pricing-section .ex-eg-pricing-reveal p {
+    color: #d7e5f2;
+    line-height: 1.8;
+  }
+
+  #pricing-section .ex-eg-pricing-reveal ul {
+    color: #eaf4ff;
+    line-height: 1.7;
+  }
+
+  #pricing-section .ex-eg-pricing-reveal > div > div:first-child {
+    text-shadow: 0 0 10px rgba(0, 210, 255, 0.35);
+  }
+
+  #pricing-section .ex-eg-pricing-reveal .text-4xl,
+  #pricing-section .ex-eg-pricing-reveal .text-5xl {
+    color: #ffffff;
+    text-shadow: 0 0 14px rgba(0, 240, 255, 0.45);
+  }
+
+  #pricing-section .ex-eg-pricing-reveal > a {
+    direction: rtl;
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 16px rgba(0, 210, 255, 0.24), inset 0 0 12px rgba(255, 255, 255, 0.08);
+  }
+
+  #pricing-section > .text-center {
+    position: relative;
+    width: min(100%, 980px);
+    margin-right: auto;
+    margin-left: auto;
+    padding: 30px 24px 26px;
+    box-sizing: border-box;
+    background:
+      transparent padding-box,
+      linear-gradient(90deg, #00d2ff, #7a00ff, #ff004c, #00ff88, #00d2ff) border-box;
+    border: 2px solid transparent;
+    border-radius: 24px;
+    backdrop-filter: blur(22px) saturate(145%);
+    -webkit-backdrop-filter: blur(22px) saturate(145%);
+    box-shadow:
+      0 0 8px rgba(0, 210, 255, 0.85),
+      0 0 18px rgba(122, 0, 255, 0.42);
+  }
+
+  #pricing-section > .text-center::after {
+    display: none;
+  }
+
+  #pricing-section .ex-eg-pricing-title {
+    margin-top: 18px;
+    color: #ffffff;
+    line-height: 1.3;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.45), 0 0 28px rgba(0, 210, 255, 0.55);
+  }
+
+  .ex-eg-pricing-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    direction: ltr;
+  }
+
+  .ex-eg-pricing-logo {
+    width: 76px;
+    height: 76px;
+    flex: 0 0 76px;
+    object-fit: contain;
+    border: 2px solid #00f0ff;
+    border-radius: 22px;
+    padding: 6px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 0 12px #00f0ff, 0 0 26px rgba(122, 0, 255, 0.45);
+  }
+
+  @media (max-width: 600px) {
+    #pricing-section > .text-center {
+      padding: 24px 14px 22px;
+      border-radius: 18px;
+    }
+
+    #pricing-section .ex-eg-pricing-title {
+      font-size: 2rem;
+    }
+
+    .ex-eg-pricing-title-row {
+      gap: 12px;
+    }
+
+    .ex-eg-pricing-logo {
+      width: 58px;
+      height: 58px;
+      flex-basis: 58px;
+      border-radius: 16px;
+    }
+  }
+
+  .ex-eg-pricing-featured-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background:
+      linear-gradient(rgba(5, 12, 22, 0.88), rgba(5, 12, 22, 0.88)) padding-box,
+      conic-gradient(from 0deg, #ff004c, #ff9d00, #fff000, #00ff88, #00d2ff, #7a00ff, #ff004c) border-box;
+    border: 2px solid transparent;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 0 12px rgba(0, 210, 255, 0.7), 0 0 28px rgba(122, 0, 255, 0.35), inset 0 0 12px rgba(255, 255, 255, 0.12);
+  }
+
+  .ex-eg-pricing-featured-badge svg {
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+  }
+
+  @keyframes fadeInScale {
+    0% {
+      opacity: 0;
+      transform: translateY(30px) scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .ex-eg-animate-fade-in {
+    animation: fadeInScale 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation-delay: 0.3s;
+  }
+  
+  .ex-eg-pricing-reveal {
+    opacity: 0;
+    transform: translateY(32px) scale(0.96);
+  }
+
+  #pricing-section.is-visible .ex-eg-pricing-reveal {
+    animation: pricing-card-in 2.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  #pricing-section.is-visible .ex-eg-pricing-reveal:nth-child(1),
+  #pricing-section.ex-eg-pricing-focus .ex-eg-pricing-reveal:nth-child(1) { animation-delay: 0.3s; }
+  #pricing-section.is-visible .ex-eg-pricing-reveal:nth-child(2),
+  #pricing-section.ex-eg-pricing-focus .ex-eg-pricing-reveal:nth-child(2) { animation-delay: 0.9s; }
+  #pricing-section.is-visible .ex-eg-pricing-reveal:nth-child(3),
+  #pricing-section.ex-eg-pricing-focus .ex-eg-pricing-reveal:nth-child(3) { animation-delay: 1.5s; }
+
+  #pricing-section.is-visible .ex-eg-pricing-reveal:nth-child(1),
+  #pricing-section.ex-eg-pricing-focus .ex-eg-pricing-reveal:nth-child(1) {
+    animation-name: pricing-from-left;
+  }
+
+  #pricing-section.is-visible .ex-eg-pricing-reveal:nth-child(2),
+  #pricing-section.ex-eg-pricing-focus .ex-eg-pricing-reveal:nth-child(2) {
+    animation-name: pricing-from-bottom;
+  }
+
+  #pricing-section.is-visible .ex-eg-pricing-reveal:nth-child(3),
+  #pricing-section.ex-eg-pricing-focus .ex-eg-pricing-reveal:nth-child(3) {
+    animation-name: pricing-from-right;
+  }
+
+  #pricing-section.ex-eg-pricing-focus {
+    animation: pricing-section-focus 2.4s ease-out;
+    animation-delay: 0.3s;
+  }
+
+  #pricing-section.ex-eg-pricing-focus > .text-center {
+    animation: pricing-heading-focus 1.8s ease-out;
+    animation-delay: 0.3s;
+  }
+
+  #pricing-section.ex-eg-pricing-focus .ex-eg-pricing-reveal {
+    animation-name: pricing-card-focus;
+    animation-duration: 2.8s;
+  }
+
+  #pricing-section.ex-eg-pricing-focus .ex-eg-pricing-reveal:nth-child(1) { animation-name: pricing-from-left; }
+  #pricing-section.ex-eg-pricing-focus .ex-eg-pricing-reveal:nth-child(2) { animation-name: pricing-from-bottom; }
+  #pricing-section.ex-eg-pricing-focus .ex-eg-pricing-reveal:nth-child(3) { animation-name: pricing-from-right; }
+
+  @keyframes pricing-section-focus {
+    0%, 100% { filter: brightness(1); }
+    25% { filter: brightness(1.45); }
+    55% { filter: brightness(1.1); }
+  }
+
+  @keyframes pricing-heading-focus {
+    0%, 100% { transform: scale(1); text-shadow: none; }
+    35% { transform: scale(1.06); text-shadow: 0 0 18px #00d2ff, 0 0 36px #7a00ff; }
+  }
+
+  @keyframes pricing-card-focus {
+    0% { opacity: 0; transform: translateY(55px) scale(0.88) rotateX(12deg); }
+    55% { opacity: 1; transform: translateY(-8px) scale(1.03) rotateX(0); }
+    100% { opacity: 1; transform: translateY(0) scale(1) rotateX(0); }
+  }
+
+  @keyframes pricing-from-left {
+    from { opacity: 0; transform: translateX(-180px) scale(0.72) rotateY(-28deg); }
+    to { opacity: 1; transform: translateX(0) scale(1) rotateY(0); }
+  }
+
+  @keyframes pricing-from-bottom {
+    from { opacity: 0; transform: translateY(180px) scale(0.72) rotateX(25deg); }
+    to { opacity: 1; transform: translateY(0) scale(1) rotateX(0); }
+  }
+
+  @keyframes pricing-from-right {
+    from { opacity: 0; transform: translateX(180px) scale(0.72) rotateY(28deg); }
+    to { opacity: 1; transform: translateX(0) scale(1) rotateY(0); }
+  }
+
+  @keyframes pricing-card-in {
+    from { opacity: 0; transform: translateY(32px) scale(0.96); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #pricing-section.ex-eg-pricing-focus,
+    #pricing-section.ex-eg-pricing-focus > .text-center,
+    .ex-eg-pricing-reveal,
+    #pricing-section.is-visible .ex-eg-pricing-reveal {
+      opacity: 1;
+      transform: none;
+      animation: none;
+    }
+  }
+</style>
+
+
+<div class="max-w-7xl mx-auto w-full relative z-10 py-10 px-4" id="pricing-section">
+  
+  <div class="text-center mb-16 ex-eg-animate-fade-in">
+    <div class="ex-eg-pricing-title-row">
+      <img class="ex-eg-pricing-logo" src="https://i.ibb.co/dwxdC5Zj/Gemini-Generated-Image-zas83tzas83tzas8-1.jpg" alt="شعار EX EG">
+      <h2 class="ex-eg-pricing-title text-3xl md:text-5xl font-extrabold tracking-tight mb-4">باقات تطوير المنصات والأنظمة</h2>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center py-4">
+    
+    <div class="ex-eg-glass-card ex-eg-pricing-reveal rounded-3xl p-8 flex flex-col justify-between relative group transition-all duration-500 hover:-translate-y-2">
+      <div>
+        <div class="text-blue-400 font-bold text-sm mb-1 flex items-center gap-2">
+          <i data-lucide="newspaper"></i> Media & News
+        </div>
+        <h3 class="text-2xl font-bold mb-2 text-white">المواقع الإخبارية</h3>
+        <p class="text-slate-400 text-sm mb-6">مناسبة للصحف، المدونات الكبرى، والمجلات الرقمية.</p>
+        <div class="flex items-baseline gap-1 mb-6">
+          <span class="text-slate-400 text-sm">يبدأ من</span>
+          <span class="text-4xl font-extrabold text-white">$500</span>
+          <span class="text-slate-400 text-sm">/ المشروع</span>
+        </div>
+        <ul class="space-y-4 mb-8 text-slate-300 text-sm">
+          <li class="flex items-center gap-3"><i data-lucide="circle-check" class="text-blue-400 text-base"></i> تصميم متجاوب وسريع جداً</li>
+          <li class="flex items-center gap-3"><i data-lucide="circle-check" class="text-blue-400 text-base"></i> لوحة تحكم لإدارة المقالات والأقسام</li>
+          <li class="flex items-center gap-3"><i data-lucide="circle-check" class="text-blue-400 text-base"></i> نظام تعليقات وتفاعل لحظي</li>
+          <li class="flex items-center gap-3"><i data-lucide="circle-check" class="text-blue-400 text-base"></i> ربط سريع مع Firebase</li>
+        </ul>
+      </div>
+      <a href="https://wa.me/201102052489?text=مرحباً%20EX%20EG،%20أرغب%20في%20الاستفسار%20وطلب%20باقة%20المواقع%20الإخبارية%20(يبدأ%20من%20$500)." target="_blank" class="w-full py-3.5 px-6 rounded-xl font-semibold bg-white/10 hover:bg-blue-700 hover:border-blue-400 text-white transition-all duration-300 border border-blue-500/30 flex items-center justify-center gap-2 shadow-lg">
+        <i data-lucide="message-circle" class="text-lg text-blue-300 group-hover:text-white"></i>
+        <span>اطلب باقة الأخبار</span>
+      </a>
+    </div>
+
+    <div class="ex-eg-glass-card-featured ex-eg-pricing-reveal rounded-3xl p-8 md:p-10 flex flex-col justify-between relative group transition-all duration-500 lg:-translate-y-6 hover:-translate-y-8 z-20">
+      <div class="ex-eg-pricing-featured-badge absolute -top-4 right-1/2 translate-x-1/2 text-white text-xs font-bold px-4 py-1.5 rounded-full whitespace-nowrap">
+        <i data-lucide="flame" class="ml-1"></i> الأكثر طلباً لدى EX EG
+      </div>
+      <div>
+        <div class="text-cyan-400 font-bold text-sm mb-1 flex items-center gap-2">
+          <i data-lucide="graduation-cap"></i> E-Learning & Exams
+        </div>
+        <h3 class="text-2xl md:text-3xl font-bold mb-2 text-white">المنصات التعليمية والاختبارات</h3>
+        <p class="text-slate-300 text-sm mb-6">للأكاديميات، المدرسين، وأنظمة الامتحانات التفاعلية.</p>
+        <div class="flex items-baseline gap-1 mb-6">
+          <span class="text-slate-300 text-sm">يبدأ من</span>
+          <span class="text-4xl md:text-5xl font-extrabold text-white">$899</span>
+          <span class="text-slate-300 text-sm">/ المشروع</span>
+        </div>
+        <ul class="space-y-4 mb-8 text-slate-200 text-sm">
+          <li class="flex items-center gap-3"><i data-lucide="check-check" class="text-cyan-400 text-base"></i> إدارة دورات ورفع فيديوهات آمنة</li>
+          <li class="flex items-center gap-3"><i data-lucide="check-check" class="text-cyan-400 text-base"></i> نظام اختبارات تفاعلية لحظية (Real-time)</li>
+          <li class="flex items-center gap-3"><i data-lucide="check-check" class="text-cyan-400 text-base"></i> ربط متكامل مع Supabase لقواعد البيانات</li>
+          <li class="flex items-center gap-3"><i data-lucide="check-check" class="text-cyan-400 text-base"></i> تتبع درجات ونتائج الطلاب بذكاء</li>
+        </ul>
+      </div>
+      <a href="https://wa.me/201102052489?text=مرحباً%20EX%20EG،%20أرغب%20في%20الاستفسار%20وطلب%20المنصة%20التعليمية%20واختباراتها%20(يبدأ%20من%20$899)." target="_blank" class="w-full py-4 px-6 rounded-xl font-semibold bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white shadow-xl shadow-blue-600/40 transition-all duration-300 flex items-center justify-center gap-2">
+        <i data-lucide="message-circle" class="text-lg"></i>
+        <span>ابدأ منصتك التعليمية الآن</span>
+      </a>
+    </div>
+
+    <div class="ex-eg-glass-card ex-eg-pricing-reveal rounded-3xl p-8 flex flex-col justify-between relative group transition-all duration-500 hover:-translate-y-2">
+      <div>
+        <div class="text-blue-400 font-bold text-sm mb-1 flex items-center gap-2">
+          <i data-lucide="server"></i> Custom Systems & DB
+        </div>
+        <h3 class="text-2xl font-bold mb-2 text-white">الأنظمة المخصصة والـ Backend</h3>
+        <p class="text-slate-400 text-sm mb-6">لحلول المؤسسات الكبرى وتصميم قواعد البيانات.</p>
+        <div class="flex items-baseline gap-1 mb-6">
+          <span class="text-slate-400 text-sm">يبدأ من</span>
+          <span class="text-4xl font-extrabold text-white">$1,200</span>
+          <span class="text-slate-400 text-sm">/ مخصص</span>
+        </div>
+        <ul class="space-y-4 mb-8 text-slate-300 text-sm">
+          <li class="flex items-center gap-3"><i data-lucide="database" class="text-blue-400 text-base"></i> هندسة قواعد بيانات ضخمة (Supabase / Firebase)</li>
+          <li class="flex items-center gap-3"><i data-lucide="database" class="text-blue-400 text-base"></i> بناء APIs مخصصة وعالية الأمان</li>
+          <li class="flex items-center gap-3"><i data-lucide="database" class="text-blue-400 text-base"></i> ربط الأنظمة ببعضها البعض</li>
+          <li class="flex items-center gap-3"><i data-lucide="database" class="text-blue-400 text-base"></i> صيانة ودعم فني شامل مستمر</li>
+        </ul>
+      </div>
+      <a href="https://wa.me/201102052489?text=مرحباً%20EX%20EG،%20أرغب%20في%20مناقشة%20مشروع%20نظام%20مخصص%20وقواعد%20بيانات%20(Backend)." target="_blank" class="w-full py-3.5 px-6 rounded-xl font-semibold bg-white/10 hover:bg-blue-700 hover:border-blue-400 text-white transition-all duration-300 border border-blue-500/30 flex items-center justify-center gap-2 shadow-lg">
+        <i data-lucide="message-circle" class="text-lg text-blue-300 group-hover:text-white"></i>
+        <span>تواصل مع المهندسين</span>
+      </a>
+    </div>
+
+  </div>
+</div>
 <footer class="ex-eg-rgb-footer" id="ex-eg-contact">
   <div class="ex-eg-footer-container">
     
@@ -1369,6 +1812,16 @@ audio { display: none; }
 <script>
 lucide.createIcons();
 
+document.addEventListener('copy', (event) => event.preventDefault());
+document.addEventListener('cut', (event) => event.preventDefault());
+document.addEventListener('selectstart', (event) => {
+  if (!event.target.closest('input, textarea, [contenteditable="true"]')) {
+    event.preventDefault();
+  }
+});
+document.addEventListener('dragstart', (event) => event.preventDefault());
+document.addEventListener('contextmenu', (event) => event.preventDefault());
+
 document.querySelectorAll('.ex-eg-section-nav a[href^="#"]').forEach((sectionLink) => {
   sectionLink.addEventListener('click', (event) => {
     const targetSection = document.querySelector(sectionLink.getAttribute('href'));
@@ -1380,6 +1833,13 @@ document.querySelectorAll('.ex-eg-section-nav a[href^="#"]').forEach((sectionLin
       behavior: 'smooth',
       block: 'center'
     });
+
+    if (targetSection.id === 'pricing-section') {
+      targetSection.classList.remove('ex-eg-pricing-focus');
+      void targetSection.offsetWidth;
+      targetSection.classList.add('ex-eg-pricing-focus');
+      window.setTimeout(() => targetSection.classList.remove('ex-eg-pricing-focus'), 4500);
+    }
   });
 });
 
@@ -1615,6 +2075,13 @@ document.querySelectorAll('.ex-eg-video-card').forEach((card) => {
 
 </script>
 <script>
+  const pricingSection = document.getElementById('pricing-section');
+  const pricingObserver = new IntersectionObserver(([entry]) => {
+    pricingSection.classList.toggle('is-visible', entry.isIntersecting);
+  }, { threshold: 0.2 });
+
+  pricingObserver.observe(pricingSection);
+
   const gallerySection = document.querySelector('.ex-eg-gallery-container');
 
   const resetGallery = () => {
