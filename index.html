@@ -187,6 +187,16 @@ img{
   animation-delay: 1.8s;
 }
 
+.ex-eg-profile-wrap::before,
+.ex-eg-profile-wrap::after {
+  animation-play-state: paused;
+}
+
+.ex-eg-profile-wrap.is-visible::before,
+.ex-eg-profile-wrap.is-visible::after {
+  animation-play-state: running;
+}
+
 @keyframes ocean-wave-in {
   0% {
     transform: scale(1.35);
@@ -236,6 +246,110 @@ video{
   text-shadow: 0 0 10px #00f0ff;
   margin: 0;
   opacity: 0;
+  animation-play-state: paused;
+}
+
+.ex-eg-frame.is-visible p {
+  animation-play-state: running;
+}
+.ex-eg-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  width: min(90%, 900px);
+  margin: 0 auto 12px;
+  direction: rtl;
+}
+
+.ex-eg-stat {
+  opacity: 0;
+  padding: 18px 12px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.62);
+  border: 2px solid #00f0ff;
+  border-radius: 16px;
+  box-shadow: 0 0 14px rgba(0, 240, 255, 0.65), inset 0 0 14px rgba(0, 240, 255, 0.14);
+}
+
+.ex-eg-stats.is-visible .ex-eg-stat:nth-child(1) {
+  animation: stats-from-left 1.8s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
+}
+
+.ex-eg-stats.is-visible .ex-eg-stat:nth-child(2) {
+  animation: stats-from-top 1.8s cubic-bezier(0.22, 1, 0.36, 1) 0.45s both;
+}
+
+.ex-eg-stats.is-visible .ex-eg-stat:nth-child(3) {
+  animation: stats-from-bottom 1.8s cubic-bezier(0.22, 1, 0.36, 1) 0.8s both;
+}
+
+.ex-eg-stats.is-visible .ex-eg-stat:nth-child(4) {
+  animation: stats-from-right 1.8s cubic-bezier(0.22, 1, 0.36, 1) 1.15s both;
+}
+
+@keyframes stats-from-left {
+  from { opacity: 0; transform: translateX(-90px) rotate(-6deg) scale(0.8); }
+  to { opacity: 1; transform: translateX(0) rotate(0) scale(1); }
+}
+
+@keyframes stats-from-top {
+  from { opacity: 0; transform: translateY(-90px) rotate(6deg) scale(0.8); }
+  to { opacity: 1; transform: translateY(0) rotate(0) scale(1); }
+}
+
+@keyframes stats-from-bottom {
+  from { opacity: 0; transform: translateY(90px) rotate(-6deg) scale(0.8); }
+  to { opacity: 1; transform: translateY(0) rotate(0) scale(1); }
+}
+
+@keyframes stats-from-right {
+  from { opacity: 0; transform: translateX(90px) rotate(6deg) scale(0.8); }
+  to { opacity: 1; transform: translateX(0) rotate(0) scale(1); }
+}
+
+.ex-eg-stat-icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto 12px;
+  color: #00f0ff;
+  filter: drop-shadow(0 0 8px #00f0ff);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ex-eg-stat {
+    opacity: 1;
+    transform: none;
+    animation: none !important;
+  }
+}
+
+.ex-eg-stat-value {
+  display: block;
+  color: #fff;
+  font-size: clamp(24px, 4vw, 38px);
+  line-height: 1;
+  text-shadow: 0 0 12px #00f0ff;
+}
+
+.ex-eg-stat-label {
+  display: block;
+  margin-top: 10px;
+  color: #00f0ff;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  .ex-eg-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    width: 100%;
+  }
+
+  .ex-eg-stat {
+    padding: 15px 8px;
+  }
 }
 .ex-eg-text1, .ex-eg-text2, .ex-eg-text3 {
   position: absolute;
@@ -716,6 +830,12 @@ audio { display: none; }
   z-index: 1;
   box-shadow: 0 0 15px rgba(255, 0, 128, 0.2);
   animation: box-glow-anim 15s linear infinite;
+  animation-play-state: paused;
+}
+
+.ex-eg-rgb-footer.is-visible .ex-eg-rgb-box,
+.ex-eg-rgb-footer.is-visible .ex-eg-rgb-box::before {
+  animation-play-state: running;
 }
 
 .ex-eg-rgb-box::before {
@@ -907,6 +1027,11 @@ audio { display: none; }
     box-shadow: 0 0 12px #00d2ff, 0 0 24px rgba(255, 0, 128, 0.65), inset 0 0 12px rgba(0, 210, 255, 0.25);
     text-shadow: 0 0 10px #fff, 0 0 18px #00d2ff;
     animation: rainbow-title-glow 5s linear infinite;
+    animation-play-state: paused;
+  }
+
+  .ex-eg-gallery-title.is-visible {
+    animation-play-state: running;
   }
 
   @keyframes rainbow-title-glow {
@@ -1259,6 +1384,29 @@ audio { display: none; }
    <p class="ex-eg-text3">Ex:Moaz Elgohary </p>
  </div>
 
+ <section class="ex-eg-stats" aria-label="إحصائيات EX EG">
+  <div class="ex-eg-stat">
+    <i class="ex-eg-stat-icon" data-lucide="eye" aria-hidden="true"></i>
+    <span class="ex-eg-stat-value" data-target="1250">0</span>
+    <span class="ex-eg-stat-label">الزيارات</span>
+  </div>
+  <div class="ex-eg-stat">
+    <i class="ex-eg-stat-icon" data-lucide="users-round" aria-hidden="true"></i>
+    <span class="ex-eg-stat-value" data-target="86">0</span>
+    <span class="ex-eg-stat-label">المشتركون</span>
+  </div>
+  <div class="ex-eg-stat">
+    <i class="ex-eg-stat-icon" data-lucide="panels-top-left" aria-hidden="true"></i>
+    <span class="ex-eg-stat-value" data-target="24">0</span>
+    <span class="ex-eg-stat-label">المنصات المنشأة</span>
+  </div>
+  <div class="ex-eg-stat">
+    <i class="ex-eg-stat-icon" data-lucide="globe-2" aria-hidden="true"></i>
+    <span class="ex-eg-stat-value" data-target="57">0</span>
+    <span class="ex-eg-stat-label">المواقع المنشأة</span>
+  </div>
+ </section>
+
  <div class="ex-eg-neon-player" id="ex-eg-audio">
   <audio id="audio" src="luvvoice.com-20260910-Xn27w2.mp3" preload="auto" autoplay></audio>
   <div class="ex-eg-glow-bg"></div>
@@ -1278,7 +1426,7 @@ audio { display: none; }
 
 
  
-<h2 class="ex-eg-gallery-title">أعمالنا</h2>
+<h2 class="ex-eg-gallery-title">عن المنصه </h2>
 
 <div class="ex-eg-video-wrapper" id="ex-eg-videos">
   <div class="ex-eg-video-card">
@@ -1597,6 +1745,11 @@ audio { display: none; }
   .ex-eg-animate-fade-in {
     animation: fadeInScale 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     animation-delay: 0.3s;
+    animation-play-state: paused;
+  }
+
+  #pricing-section.is-visible .ex-eg-animate-fade-in {
+    animation-play-state: running;
   }
   
   .ex-eg-pricing-reveal {
@@ -1694,6 +1847,120 @@ audio { display: none; }
       opacity: 1;
       transform: none;
       animation: none;
+    }
+  }
+
+  @media (max-width: 600px) {
+    body {
+      width: 100%;
+      padding: 24px 12px;
+      gap: 22px;
+    }
+
+    body::after {
+      top: 6px;
+      right: 6px;
+      bottom: 6px;
+      left: 6px;
+      border-width: 2px;
+      border-radius: 12px;
+    }
+
+    .ex-eg-profile-wrap {
+      top: 3vh;
+      width: min(78vw, 300px);
+      height: min(78vw, 300px);
+      margin-bottom: 56px;
+    }
+
+    .ex-eg-profile-image {
+      width: 100%;
+      height: 100%;
+    }
+
+    .ex-eg-frame {
+      width: 100%;
+      max-width: 420px;
+      height: 64px;
+      margin: 16px auto;
+    }
+
+    .ex-eg-frame p {
+      width: 100%;
+      font-size: clamp(17px, 5vw, 24px);
+      text-align: center;
+    }
+
+    .ex-eg-neon-player {
+      width: 100%;
+      box-sizing: border-box;
+      gap: 10px;
+      padding: 14px;
+      border-radius: 18px;
+    }
+
+    .ex-eg-play-btn {
+      width: 46px;
+      height: 46px;
+      font-size: 18px;
+    }
+
+    .ex-eg-title {
+      font-size: 14px;
+    }
+
+    .ex-eg-gallery-title,
+    .ex-eg-companies-title {
+      width: 100%;
+      font-size: 21px;
+      padding: 10px 14px;
+    }
+
+    .ex-eg-gallery-track,
+    .ex-eg-companies-track {
+      gap: 22px;
+      padding-right: 12px;
+      padding-left: 12px;
+    }
+
+    .ex-eg-rgb-footer {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 12px 0;
+    }
+
+    .ex-eg-footer-container {
+      justify-content: center;
+      gap: 14px;
+    }
+
+    .ex-eg-rgb-box {
+      max-width: 100%;
+      box-sizing: border-box;
+      padding: 12px 16px;
+    }
+
+    .ex-eg-text-box p {
+      font-size: 12px;
+      text-align: center;
+    }
+
+    #pricing-section {
+      padding: 24px 0;
+    }
+
+    #pricing-section .ex-eg-pricing-title {
+      font-size: 1.55rem;
+    }
+
+    #pricing-section .grid {
+      gap: 20px;
+    }
+
+    #pricing-section .ex-eg-glass-card,
+    #pricing-section .ex-eg-glass-card-featured {
+      padding: 22px 18px;
+      border-radius: 20px;
     }
   }
 </style>
@@ -2111,6 +2378,9 @@ document.querySelectorAll('.ex-eg-video-card').forEach((card) => {
   mediaObserver.observe(document.querySelector('.ex-eg-neon-player'));
   mediaObserver.observe(document.querySelector('.ex-eg-video-wrapper'));
   mediaObserver.observe(document.querySelector('.ex-eg-profile-wrap'));
+  mediaObserver.observe(document.querySelector('.ex-eg-frame'));
+  mediaObserver.observe(document.querySelector('.ex-eg-rgb-footer'));
+  document.querySelectorAll('.ex-eg-gallery-title').forEach((title) => mediaObserver.observe(title));
 
   const companiesSection = document.querySelector('.ex-eg-companies-section');
   mediaObserver.observe(companiesSection);
@@ -2143,6 +2413,46 @@ document.querySelectorAll('.ex-eg-video-card').forEach((card) => {
             closeLightbox();
         }
     });
+
+    const stats = document.querySelector('.ex-eg-stats');
+    const statValues = document.querySelectorAll('.ex-eg-stat-value');
+    let statsStarted = false;
+
+    const animateStats = () => {
+      if (statsStarted) return;
+      statsStarted = true;
+
+      statValues.forEach((statValue) => {
+        const target = Number(statValue.dataset.target);
+
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          statValue.textContent = target.toLocaleString('ar-EG');
+          return;
+        }
+
+        const startTime = performance.now();
+        const duration = 2600;
+
+        const updateStat = (currentTime) => {
+          const progress = Math.min((currentTime - startTime) / duration, 1);
+          const easedProgress = 1 - Math.pow(1 - progress, 3);
+          statValue.textContent = Math.floor(easedProgress * target).toLocaleString('ar-EG');
+
+          if (progress < 1) requestAnimationFrame(updateStat);
+        };
+
+        requestAnimationFrame(updateStat);
+      });
+    };
+
+    const statsObserver = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) {
+          stats.classList.add('is-visible');
+          animateStats();
+        }
+    }, { threshold: 0.35 });
+
+    statsObserver.observe(stats);
 </script>
 <body>
 </html>
