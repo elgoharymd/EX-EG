@@ -98,6 +98,30 @@ body > * {
   animation: float 3.5s ease-in-out infinite;
 }
 
+.ex-eg-scroll-text {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: opacity 0.85s ease-out, transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.ex-eg-scroll-text.ex-eg-scroll-from-left {
+  transform: translateX(-80px);
+}
+
+.ex-eg-scroll-text.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ex-eg-scroll-text,
+  .ex-eg-scroll-text.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
 @keyframes float {
  0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-12px); }
@@ -831,11 +855,40 @@ audio { display: none; }
   box-shadow: 0 0 15px rgba(255, 0, 128, 0.2);
   animation: box-glow-anim 15s linear infinite;
   animation-play-state: paused;
+  opacity: 0;
+  transform: translateY(60px) scale(0.9);
 }
 
 .ex-eg-rgb-footer.is-visible .ex-eg-rgb-box,
 .ex-eg-rgb-footer.is-visible .ex-eg-rgb-box::before {
   animation-play-state: running;
+}
+
+.ex-eg-rgb-footer.is-visible .ex-eg-rgb-box:nth-child(1) {
+  animation: footer-box-from-top 2.4s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both, box-glow-anim 15s linear infinite;
+}
+
+.ex-eg-rgb-footer.is-visible .ex-eg-rgb-box:nth-child(2) {
+  animation: footer-box-from-left 2.8s cubic-bezier(0.22, 1, 0.36, 1) 0.35s both, box-glow-anim 15s linear infinite;
+}
+
+.ex-eg-rgb-footer.is-visible .ex-eg-rgb-box:nth-child(3) {
+  animation: footer-box-from-right 3.2s cubic-bezier(0.22, 1, 0.36, 1) 0.6s both, box-glow-anim 15s linear infinite;
+}
+
+@keyframes footer-box-from-top {
+  from { opacity: 0; transform: translateY(-70px) scale(0.88); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes footer-box-from-left {
+  from { opacity: 0; transform: translateX(-100px) scale(0.88); }
+  to { opacity: 1; transform: translateX(0) scale(1); }
+}
+
+@keyframes footer-box-from-right {
+  from { opacity: 0; transform: translateX(100px) scale(0.88); }
+  to { opacity: 1; transform: translateX(0) scale(1); }
 }
 
 .ex-eg-rgb-box::before {
@@ -878,10 +931,42 @@ audio { display: none; }
   color: #fff;
   margin: 0;
   font-size: 14px;
+  opacity: 0;
+  transform: translateX(-70px);
 }
 
 .ex-eg-text-box strong {
   color: #00f3ff;
+  display: inline-block;
+  transform: translateX(70px);
+}
+
+.ex-eg-rgb-footer.is-visible .ex-eg-text-box p {
+  animation: text-box-from-left 2.2s cubic-bezier(0.22, 1, 0.36, 1) 0.55s both;
+}
+
+.ex-eg-rgb-footer.is-visible .ex-eg-text-box strong {
+  animation: text-box-from-right 2.5s cubic-bezier(0.22, 1, 0.36, 1) 0.8s both;
+}
+
+@keyframes text-box-from-left {
+  from { opacity: 0; transform: translateX(-70px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes text-box-from-right {
+  from { opacity: 0; transform: translateX(70px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ex-eg-rgb-box,
+  .ex-eg-text-box p,
+  .ex-eg-text-box strong {
+    opacity: 1;
+    transform: none;
+    animation: none !important;
+  }
 }
 
 .ex-eg-social-box {
@@ -1026,12 +1111,36 @@ audio { display: none; }
     border-radius: 16px;
     box-shadow: 0 0 12px #00d2ff, 0 0 24px rgba(255, 0, 128, 0.65), inset 0 0 12px rgba(0, 210, 255, 0.25);
     text-shadow: 0 0 10px #fff, 0 0 18px #00d2ff;
-    animation: rainbow-title-glow 5s linear infinite;
-    animation-play-state: paused;
+    opacity: 0;
+    transform: translateX(90px);
+    animation: none;
   }
 
   .ex-eg-gallery-title.is-visible {
-    animation-play-state: running;
+    animation: gallery-title-from-right 0.9s cubic-bezier(0.22, 1, 0.36, 1) both, rainbow-title-glow 5s linear infinite;
+  }
+
+  .ex-eg-gallery-title.ex-eg-platform-title.is-visible {
+    animation: platform-title-from-top 1.6s cubic-bezier(0.22, 1, 0.36, 1) both, rainbow-title-glow 5s linear infinite;
+  }
+
+  .ex-eg-gallery-title.ex-eg-work-title.is-visible {
+    animation: work-title-from-bottom 1.9s cubic-bezier(0.22, 1, 0.36, 1) both, rainbow-title-glow 5s linear infinite;
+  }
+
+  @keyframes gallery-title-from-right {
+    from { opacity: 0; transform: translateX(90px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  @keyframes platform-title-from-top {
+    from { opacity: 0; transform: translateY(-90px) rotate(-4deg) scale(0.92); }
+    to { opacity: 1; transform: translateY(0) rotate(0) scale(1); }
+  }
+
+  @keyframes work-title-from-bottom {
+    from { opacity: 0; transform: translateY(100px) scale(0.92); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
   }
 
   @keyframes rainbow-title-glow {
@@ -1171,6 +1280,17 @@ audio { display: none; }
   border: 2px solid #00d2ff;
   border-radius: 14px;
   box-shadow: 0 0 16px rgba(0, 210, 255, 0.7), inset 0 0 12px rgba(0, 210, 255, 0.2);
+  opacity: 0;
+  transform: translateX(90px);
+}
+
+.ex-eg-companies-section.is-visible .ex-eg-companies-title {
+  animation: companies-title-from-top 1.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes companies-title-from-top {
+  from { opacity: 0; transform: translateY(-100px) scale(0.9); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 .ex-eg-companies-window {
@@ -1426,7 +1546,7 @@ audio { display: none; }
 
 
  
-<h2 class="ex-eg-gallery-title">عن المنصه </h2>
+<h2 class="ex-eg-gallery-title ex-eg-platform-title">عن المنصه </h2>
 
 <div class="ex-eg-video-wrapper" id="ex-eg-videos">
   <div class="ex-eg-video-card">
@@ -1453,32 +1573,32 @@ audio { display: none; }
   </div>
 </div>
 
-<h2 class="ex-eg-gallery-title">أعمالنا</h2>
+<h2 class="ex-eg-gallery-title ex-eg-work-title">أعمالنا</h2>
 <div class="ex-eg-gallery-container" id="ex-eg-work">
   <div class="ex-eg-gallery-track">
     <div class="ex-eg-gallery-entry">
       <div class="ex-eg-gallery-item">
         <img src="https://i.ibb.co/dwxdC5Zj/Gemini-Generated-Image-zas83tzas83tzas8-1.jpg" alt="وصف" class="ex-eg-lightbox-trigger">
       </div>
-      <p class="ex-eg-gallery-caption">النص</p>
+      <p class="ex-eg-gallery-caption">تصميم إبداعي</p>
     </div>
     <div class="ex-eg-gallery-entry">
       <div class="ex-eg-gallery-item">
         <img src="https://i.ibb.co/dwxdC5Zj/Gemini-Generated-Image-zas83tzas83tzas8-1.jpg" alt="وصف" class="ex-eg-lightbox-trigger">
       </div>
-      <p class="ex-eg-gallery-caption">النص</p>
+      <p class="ex-eg-gallery-caption">واجهة عصرية</p>
     </div>
     <div class="ex-eg-gallery-entry">
       <div class="ex-eg-gallery-item">
         <img src="https://i.ibb.co/dwxdC5Zj/Gemini-Generated-Image-zas83tzas83tzas8-1.jpg" alt="وصف" class="ex-eg-lightbox-trigger">
       </div>
-      <p class="ex-eg-gallery-caption">النص</p>
+      <p class="ex-eg-gallery-caption">منصة رقمية</p>
     </div>
     <div class="ex-eg-gallery-entry">
       <div class="ex-eg-gallery-item">
         <img src="https://i.ibb.co/dwxdC5Zj/Gemini-Generated-Image-zas83tzas83tzas8-1.jpg" alt="وصف" class="ex-eg-lightbox-trigger">
       </div>
-      <p class="ex-eg-gallery-caption">النص</p>
+      <p class="ex-eg-gallery-caption">حلول متكاملة</p>
     </div>
   </div>
 </div>
@@ -1489,27 +1609,27 @@ audio { display: none; }
     <div class="ex-eg-companies-track">
       <div class="ex-eg-company-card">
         <img class="ex-eg-company-logo ex-eg-lightbox-trigger" src="https://i.ibb.co/dwxdC5Zj/Gemini-Generated-Image-zas83tzas83tzas8-1.jpg" alt="">
-            <p class="ex-eg-gallery-caption">النص</p>
+            <p class="ex-eg-gallery-caption">شريك التقنية</p>
 
       </div>
       <div class="ex-eg-company-card">
         <img class="ex-eg-company-logo ex-eg-lightbox-trigger" src="https://i.ibb.co/dwxdC5Zj/Gemini-Generated-Image-zas83tzas83tzas8-1.jpg" alt="">
-              <p class="ex-eg-gallery-caption">النص</p>
+              <p class="ex-eg-gallery-caption">شريك التطوير</p>
 
       </div>
       <div class="ex-eg-company-card">
         <img class="ex-eg-company-logo ex-eg-lightbox-trigger" src="https://i.ibb.co/dwxdC5Zj/Gemini-Generated-Image-zas83tzas83tzas8-1.jpg" alt="">
-              <p class="ex-eg-gallery-caption">النص</p>
+              <p class="ex-eg-gallery-caption">شريك التصميم</p>
 
       </div>
       <div class="ex-eg-company-card">
         <img class="ex-eg-company-logo ex-eg-lightbox-trigger" src="https://i.ibb.co/dwxdC5Zj/Gemini-Generated-Image-zas83tzas83tzas8-1.jpg" alt="">
-            <p class="ex-eg-gallery-caption">النص</p>
+            <p class="ex-eg-gallery-caption">شريك الأعمال</p>
 
       </div>
       <div class="ex-eg-company-card">
         <img class="ex-eg-company-logo ex-eg-lightbox-trigger" src="https://i.ibb.co/dwxdC5Zj/Gemini-Generated-Image-zas83tzas83tzas8-1.jpg" alt="">
-         <p class="ex-eg-gallery-caption">النص</p>
+         <p class="ex-eg-gallery-caption">شريك النجاح</p>
 
       </div>
     </div>
@@ -2416,14 +2536,14 @@ document.querySelectorAll('.ex-eg-video-card').forEach((card) => {
 
     const stats = document.querySelector('.ex-eg-stats');
     const statValues = document.querySelectorAll('.ex-eg-stat-value');
-    let statsStarted = false;
+    let statsAnimationId = 0;
 
     const animateStats = () => {
-      if (statsStarted) return;
-      statsStarted = true;
+      const animationId = ++statsAnimationId;
 
       statValues.forEach((statValue) => {
         const target = Number(statValue.dataset.target);
+        statValue.textContent = '0';
 
         if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
           statValue.textContent = target.toLocaleString('ar-EG');
@@ -2438,7 +2558,9 @@ document.querySelectorAll('.ex-eg-video-card').forEach((card) => {
           const easedProgress = 1 - Math.pow(1 - progress, 3);
           statValue.textContent = Math.floor(easedProgress * target).toLocaleString('ar-EG');
 
-          if (progress < 1) requestAnimationFrame(updateStat);
+          if (progress < 1 && animationId === statsAnimationId) {
+            requestAnimationFrame(updateStat);
+          }
         };
 
         requestAnimationFrame(updateStat);
@@ -2449,10 +2571,44 @@ document.querySelectorAll('.ex-eg-video-card').forEach((card) => {
         if (entry.isIntersecting) {
           stats.classList.add('is-visible');
           animateStats();
+        } else {
+          stats.classList.remove('is-visible');
+          statsAnimationId++;
         }
     }, { threshold: 0.35 });
 
     statsObserver.observe(stats);
+
+    const textElements = Array.from(document.querySelectorAll('h1, h2, h3, h4, h5, h6, p, li, span, a, button, label'))
+      .filter((element) => element.textContent.trim()
+        && !element.closest('[aria-hidden="true"]')
+        && !element.matches('.ex-eg-stat-value'));
+    let textAnimationsEnabled = window.scrollY > 0;
+
+    const textObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (textAnimationsEnabled) {
+          entry.target.classList.toggle('is-visible', entry.isIntersecting);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    textElements.forEach((element, index) => {
+      element.classList.add('ex-eg-scroll-text');
+      element.classList.add(index % 2 === 0 ? 'ex-eg-scroll-from-right' : 'ex-eg-scroll-from-left');
+      element.style.transitionDelay = `${Math.min(index * 35, 180)}ms`;
+      textObserver.observe(element);
+    });
+
+    window.addEventListener('scroll', () => {
+      if (textAnimationsEnabled) return;
+      textAnimationsEnabled = true;
+      textElements.forEach((element) => {
+        const bounds = element.getBoundingClientRect();
+        const isVisible = bounds.top < window.innerHeight && bounds.bottom > 0;
+        if (isVisible) element.classList.add('is-visible');
+      });
+    }, { once: true, passive: true });
 </script>
 <body>
 </html>
